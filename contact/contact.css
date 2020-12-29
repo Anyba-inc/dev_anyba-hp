@@ -1,0 +1,60 @@
+@media all and (min-width: 1025px) {
+    section{position: relative; height: 32vw;}
+    .contact_details{
+        position: relative;
+        top: 18vw;
+        left: 16.67vw;
+        width: 28vw;
+        font-size: 0.85vw;
+        line-height: 1.8vw;
+    }
+    .hbspt-form{
+        position: relative;
+        top: -9.9vw;
+        left: 52vw;
+        width: 48vw;
+        text-align: center;
+    }
+    ol{
+        position: relative;
+        top: -0.8vw;
+    }
+    .footer{
+        position: relative;
+        top: 0;
+    }
+}
+@media all and (max-width: 1024px) {
+    .section_label{
+        position: relative;
+        top: 45vw;
+        left: 8vw;
+        letter-spacing: 0.12vw;
+        font-family: myriad-pro, sans-serif;
+        font-size: 17.05vw;
+        font-weight: 700;
+        font-style: normal;
+    }
+    section{position: relative; height: 180vw; overflow: hidden;}
+    .contact_details{
+        position: relative;
+        top: 68vw;
+        left: 8vw;
+        width: 84vw;
+        font-size: 3.73vw;
+        line-height: 7.2vw;
+    }
+    .hbspt-form{
+        position: absolute;
+        top: 182vw;
+        left: 8vw;
+        width: 90vw;
+        height: 62.5vw;
+        text-align: center;
+    }
+    ol{top: 448.6vw;}
+    .footer{
+        position: absolute;
+        top: 456vw;
+    }
+}

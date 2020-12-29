@@ -1,0 +1,125 @@
+@media all and (min-width: 1025px) {
+    section{height: 120vw; overflow: hidden;}
+    .privacy_title{
+        position: relative;
+        top: 16vw;
+        left: 16.67vw;
+        letter-spacing: 0.04vw;
+        font-family: myriad-pro, sans-serif;
+        font-size: 1.6vw;
+        font-weight: 600;
+        font-style: normal;
+    }
+    .privacy_label{
+        position: relative;
+        top: 17.6vw;
+        left: 16.67vw;
+        width: 66vw;
+        letter-spacing: 0.04vw;
+        font-family: myriad-pro, sans-serif;
+        font-size: 1vw;
+        font-weight: 600;
+        font-style: normal;
+    }
+    .privacy_details{
+        position: relative;
+        top: 22vw;
+        left: 16.67vw;
+        width: 66vw;
+        letter-spacing: 0.04vw;
+        font-size: 0.9vw;
+        font-weight: 300;
+        font-style: normal;
+    }
+    .privacy_details div{
+        margin-bottom: 1.8vw;
+    }
+    .privacy_details div p:first-child{
+        font-weight: 700;
+    }
+    .privacy_details div p:last-child{
+        position: relative;
+        left: 1.28vw;
+    }
+    .privacy_credit{
+        position: relative;
+        top: 23.5vw;
+        left: 16.67vw;
+        font-size: 0.9vw;
+        font-weight: 300;
+        line-height: 1.4vw;
+    }
+    ol{
+        top: 70.2vw;
+    }
+    .footer{
+        position: absolute;
+        top: 72vw;
+    }
+}
+/* メディアクエリ iPadPro12.9の横幅px以上でPC版表示 */
+@media all and (max-width: 1024px) {
+    .section_label{
+        position: relative;
+        top: 45vw;
+        left: 8vw;
+        letter-spacing: 0.12vw;
+        font-family: myriad-pro, sans-serif;
+        font-size: 10.0vw;
+        font-weight: 700;
+        font-style: normal;
+    }
+    section{height: 400vw; overflow: hidden;}
+    .privacy_title{
+        position: relative;
+        top: 65vw;
+        left: 8vw;
+        letter-spacing: 0.04vw;
+        font-size: 5.33vw;
+        font-weight: 700;
+        font-style: normal;
+    }
+    .privacy_label, .privacy_details, .privacy_credit{
+        position: relative;
+        top: 72vw;
+        left: 8vw;
+        width: 84vw;
+        letter-spacing: 0.16vw;
+        font-size: 3.2vw;
+        font-weight: 700;
+        font-style: normal;
+        line-height: 5.75vw;
+    }
+    .privacy_details{
+        position: relative;
+        top: 78vw;
+        left: 8vw;
+        width: 74.4vw;
+        font-weight: 300;
+        letter-spacing: 0.24vw;
+    }
+    .privacy_details div{
+        margin-top: 6.4vw;
+    }
+    .privacy_details div p:first-child{
+        font-weight: 700;
+    }
+    .privacy_details div p:last-child{
+        position: relative;
+        left: 4.8vw;
+    }
+    .privacy_credit{
+        position: relative;
+        top: 90vw;
+        left: 8vw;
+        font-weight: 300;
+        letter-spacing: 0.24vw;
+    }
+    ol{
+        top: 383.8vw;
+    }
+    .footer{
+        position: absolute;
+        top: 391vw;
+    }
+}

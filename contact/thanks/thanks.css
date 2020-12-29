@@ -1,0 +1,156 @@
+
+@media all and (min-width: 1025px) {
+    .top, .footer{
+        position: absolute;
+        width: 100vw;
+        overflow: hidden;
+        filter: saturate(120%);
+    }
+    a{text-decoration: none; color: #2b2b2b;}
+    a:hover{
+        transition: 100ms;
+        border-bottom: solid 2px #2b2b2b;
+    }
+    section{height: 55.89vw;}
+    section p{
+        position: absolute;
+        top: 24.6vw;
+        left: 16.67vw;
+        font-size: 0.84vw;
+        font-weight: 400;
+        line-height: 1.95vw;
+    }
+    section div{
+        display: flex;
+        position: absolute;
+        top: 30vw;
+        left: 16.67vw;
+        width: 66.66vw;
+        justify-content: space-between;
+    }
+    section div a{
+        width: 20vw;
+        height: 16.8vw;
+        border-radius: 1.6vw;
+        background: #ffaf06;
+        text-align: center;
+        overflow: hidden;
+    }
+    section div a:hover{border: none;}
+    section div a div.section_img_box{
+        display: inline-block;
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 20vw;
+        height: 12.8vw;
+    }
+    .section_img_box img{
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        object-fit: contain;
+        transform: scale(0.54);
+    }
+    section a p{
+        display: inline-block;
+        position: absolute;
+        top: 75%;
+        left: 0;
+        width: 100%;
+        font-size: 1.2vw;
+        color: #fff;
+        font-weight: 600;
+        -webkit-font-smoothing: antialiased;
+    }
+    ol{top: 52.6vw;}
+    .footer{
+        top: 54.5vw;
+        height: 50vw;
+    }
+}
+/* メディアクエリ iPadPro12.9の横幅px以上でPC版表示 */
+@media all and (max-width: 1024px) {
+    .top, .footer{
+        position: absolute;
+        width: 100vw;
+        overflow: hidden;
+        filter: saturate(120%);
+    }
+    section{
+        width: 100vw;
+    }
+    .section_label{
+        position: relative;
+        top: 45vw;
+        left: 8vw;
+        width: 1vw;
+        white-space: nowrap;
+        letter-spacing: 0.12vw;
+        font-family: myriad-pro, sans-serif;
+        font-size: 17.05vw;
+        font-weight: 700;
+        font-style: normal;
+    } 
+    section p{
+        position: absolute;
+        top: 90vw;
+        left: 8vw;
+        width: 84vw;
+        font-size: 3.73vw;
+        line-height: 7.2vw;
+        font-weight: 400;
+    }
+    section div{
+        position: absolute;
+        top: 128vw;
+        left: 8vw;
+        width: 84vw;
+        overflow: hidden;
+    }
+    section a{
+        display: block;
+        position: relative;
+        width: 100%;
+        height: 32.8vw;
+        border-radius: 1.6vw;
+        margin-bottom: 4vw;
+        background: #ffaf06;
+        overflow: hidden;
+    }
+    section a:hover{border: none;}
+    section a div.section_img_box{
+        display: inline-block;
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 32.8vw;
+        height: 32.8vw;
+    }
+    .section_img_box img{
+        position: absolute;
+        width: 100%;
+        height: 100%;
+        object-fit: contain;
+        transform: scale(0.54);
+    }
+    section a p{
+        display: inline-block;
+        position: relative;
+        top: 0;
+        left: 34.8vw;
+        height: 100%;
+        color: #fff;
+        font-size: 4.2vw;
+        font-weight: 600;
+        line-height: 34vw;
+        -webkit-font-smoothing: antialiased;
+    }
+    ol{top: 246.6vw;}
+    .footer{
+        top: 258.5vw;
+        height: 284vw;
+    }
+}

@@ -1,0 +1,279 @@
+@media all and (min-width: 1025px) {
+    .service_label{
+        position: relative;
+        top: 0;
+        width: 12vw;
+        height: 2vw;
+        font-weight: 700;
+        font-size: 1.4vw;
+        text-align: center;
+    }
+    .service_label{
+        position: relative;
+        top: 0;
+        width: 12vw;
+        height: 2vw;
+        font-weight: 700;
+        font-size: 1.4vw;
+        text-align: center;
+    }
+    .service_local, .service_child{
+        position: relative;
+        top: 20vw;
+        left: 16.67vw;
+        width: 66.66vw;
+    }
+    .service_child{
+        top: 25.5vw;
+        border: none;
+    }
+    .service_child .service_label{width: 8.8vw;}
+    .service_label::before{
+        content: '';
+        position: absolute;
+        top: 67%;
+        left: 0;
+        width: 100%;
+        height: 30%;
+        background-color: #FBB03B;
+        filter: saturate(120%);
+        z-index: -1;
+    }
+    .service_unit{
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
+        position: relative;
+        top: 2.1vw;
+        width: 100%;
+    }
+    .service_unit div{
+        position: relative;
+        width: 31.25vw;
+        height: 40vw;
+    }
+    .service_unit img{
+        position: relative;
+        width: 100%;
+        object-fit: cover;
+    }
+    .service_unit p{
+        position: relative;
+        left: 1.75vw;
+        width: 31.33vw;
+        text-align: left;
+    }
+    .service_unit div p:nth-child(2){
+        top: 0.8vw;
+        font-family: myriad-pro, sans-serif;
+        font-size: 2.5vw;
+        font-weight: 700;
+        font-style: normal;
+        letter-spacing: 0.14vw;
+    }
+    .service_child .service_unit div p:nth-child(2){
+        font-size: 2vw;
+    }
+    .service_unit div p:nth-child(3){
+        top: 1.4vw;
+        width: 27.75vw;
+        font-size: 0.85vw;
+        font-weight: 300;
+        font-style: normal;
+    }
+    .service_unit a{
+        display: inline-block;
+        position: relative;
+        top: 3.2vw;
+        left: 18vw;
+        width: 12vw;
+        height: 2vw;
+        color: #F59500;
+        border: solid 2px #F59500;
+        border-radius: 35PX;
+        text-align: center;
+        line-height: 2vw;
+        font-size: 0.84vw;
+        font-weight: 700;
+        overflow: hidden;
+    }
+    .service_unit a:hover{color: #fff; border: solid 2px #F59500;}
+    .service_unit a::before{
+        content: '';
+        background-color: #F59500;
+        position: absolute;
+        top: -10%;
+        left: -10%;
+        width: 0;
+        height: 120%;
+        transition: 250ms;
+        transform: skew(30deg);
+        z-index: 0;
+    }
+    .service_unit a:hover::before{
+        width: 120%;
+        z-index: -10;
+    }
+    .service_unit a:hover > span::before{
+        background: url(../img/overwindow_white.svg);
+        background-size: contain;
+        background-repeat: no-repeat;
+    }
+    .service_unit a span{
+        display: inline-block;
+        position: absolute;
+        top: 50%;
+        left: 45%;
+        transform: translate(-50%, -50%);
+        white-space: nowrap;
+    }
+    .service_unit a span::before{
+        content: '';
+        position: absolute;
+        top: 0.54vw;
+        left: 108%;
+        width: 0.85vw;
+        height: 0.85vw;
+        background: url(../img/overwindow_orange.svg);
+        background-size: contain;
+        background-repeat: no-repeat;
+    }
+    ol{
+        top: 110.5vw;
+    }
+    .footer{
+        position: absolute;
+        top: 112.5vw;
+    }
+}
+
+
+@media all and (max-width: 1024px) {
+    .section_label{
+        position: relative;
+        top: 45vw;
+        left: 8vw;
+        width: 84vw;
+        letter-spacing: 0.12vw;
+        font-family: myriad-pro, sans-serif;
+        font-size: 17.05vw;
+        font-weight: 700;
+        font-style: normal;
+    }
+    /* section{height: 900vw; overflow: hidden;} */
+    .service_local, .service_child{
+        position: relative;
+        top: 72vw;
+        left: 8vw;
+        width: 84vw;
+    }
+    .service_child{
+        top: 92vw;
+        border: none;
+    }
+    .service_label{
+        position: relative;
+        top: 0;
+        width: 46vw;
+        height: 2vw;
+        font-weight: 700;
+        font-size: 5.33vw;
+        text-align: center;
+        line-height: 5.33vw;
+    }
+    .service_child .service_label{width: 36vw;}
+    .service_label::before{
+        content: '';
+        position: absolute;
+        top: 169%;
+        left: 0;
+        width: 100%;
+        height: 180%;
+        background-color: #FBB03B;
+        filter: saturate(120%);
+        z-index: -1;
+    }
+    .service_unit{
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
+        position: relative;
+        top: 13.2vw;
+        width: 100%;
+    }
+    .service_unit div{
+        position: relative;
+        width: 100%;
+        height: 138vw;
+    }
+    .service_child .service_unit div:nth-child(2){
+        top: 8vw;
+        height: 140vw;
+    }
+    .service_unit img{
+        position: relative;
+        width: 100%;
+        object-fit: cover;
+    }
+    .service_unit p{
+        position: relative;
+        left: 1.75vw;
+        width: 76.5vw;
+        text-align: left;
+    }
+    .service_unit div p:nth-child(2){
+        top: 0.8vw;
+        font-family: myriad-pro, sans-serif;
+        font-size: 8.53vw;
+        font-weight: 700;
+        font-style: normal;
+        letter-spacing: 0.14vw;
+    }
+    .service_unit div p:nth-child(3){
+        top: 3.2vw;
+        font-size: 3.2vw;
+        font-weight: 300;
+        font-style: normal;
+    }
+    .service_unit a{
+        position: absolute;
+        top: 106vw;
+        left: 1.33vw;
+        width: 78.67vw;
+        height: 8.53vw;
+        color: #F59500;
+        border: solid 2px #F59500;
+        border-radius: 5.4vw;
+        text-align: center;
+        line-height: 8.53vw;
+        font-size: 3.2vw;
+        font-weight: 700;
+    }
+    .service_unit a span{
+        display: inline-block;
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        white-space: nowrap;
+    }
+    .service_unit a span::before{
+        content: '';
+        position: absolute;
+        top: 50%;
+        left: 108%;
+        width: 3.2vw;
+        height: 3.2vw;
+        background: url(../img/overwindow_orange.svg);
+        background-size: contain;
+        background-repeat: no-repeat;
+        transform: translateY(-50%);
+    }
+    ol{
+        top: 532vw;
+    }
+    .footer{
+        position: absolute;
+        top: 540vw;
+    }
+}
