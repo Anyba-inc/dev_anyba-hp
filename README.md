@@ -1,4 +1,8 @@
 # 📋 Anyba HP
+| Environment | URL |
+| :----: | :-----: |
+| production | https://anyba.jp |
+| development | https://anyba-inc.github.io/dev_anyba-hp |
 
 ## 🔰 Quick Start
 coming soon...
