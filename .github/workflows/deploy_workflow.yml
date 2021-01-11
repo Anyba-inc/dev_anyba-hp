@@ -1,0 +1,70 @@
+# name: deploy_workflow
+# on:
+#   push:
+#     tags:
+#       - 'v*'
+      
+# jobs:
+#   build:
+#     runs-on: ubuntu-latest
+
+#     steps:
+
+#       # tag バージョンを取得する
+#       - name: Get the version
+#         id: get_version
+#         run: echo ::set-output name=version::${{ github.ref }}
+
+#       - uses: actions/checkout@v2
+#         with:
+#           fetch-depth: 0
+#       - name: Update AUTHORS
+#         run: |
+#           git log --format='%aN <%aE>%n%cN <%cE>' | sort -u > AUTHORS
+#       - name: Create Pull Request
+#         uses: peter-evans/create-pull-request@v3
+#         with:
+#           commit-message: update authors
+#           title: Update AUTHORS
+#           body: Credit new contributors by updating AUTHORS
+#           branch: update-authors
+
+      # dev ブランチをチェックアウトする
+      # - name: checkout develop
+      #   uses: actions/checkout@v2
+      #   with:
+      #     ref: develop
+
+      # ブランチを作成する
+      # - name: Create Branch
+      #   id: create_branch
+      #   env:
+      #     TZ: 'Asia/Tokyo'
+      #     GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+      #   run: |
+      #     DATE=`date +"%Y%m%d"`
+      #     TAG=${{ steps.get_version.outputs.version }}
+      #     BRANCH_NAME="release_$DATE_$TAG"
+      #     git checkout -b "$BRANCH_NAME"
+      #     git push origin "$BRANCH_NAME"
+      #     echo ::set-output name=branch_name::$BRANCH_NAME
+
+      # プルリクを作成する
+      # - name: Create Pull Request
+      #   uses: peter-evans/create-pull-request@v3
+      #   with:
+      #     token: ${{ secrets.GITHUB_TOKEN }}
+      #     commit-message: '[BOT] UPDATE'
+      #     title: '[Example] Update report ${{ steps.get_version.outputs.version }}'
+      #     branch-suffix: 'short-commit-hash'
+      #     delete-branch: false
+
+      # - name: pull-request
+      #   uses: repo-sync/pull-request@v2
+      #   with:
+      #     destination_branch: "main"
+      #     pr_title: "[Example] Update report ${{ steps.get_version.outputs.VERSION }}"
+      #     pr_body: ":crown: *An automated PR*"
+      #     pr_draft: false
+      #     pr_allow_empty: true
+      #     github_token: ${{ secrets.GITHUB_TOKEN }}
